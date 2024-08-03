@@ -8,38 +8,72 @@
 </head>
 <body>
     <div class="containerSplitTwo">
-        <img src="assets/boyu-yan-AyqATnC-stc-unsplash.jpg" class="mainImage" alt="image">
+        <div class="imgDiv">
+            <div class="odinImgNText">
+                <img src="assets/odin-lined.png" class="odinLogo" alt="odin logo">
+                <div class="odinText">ODIN</div>
+            </div>
+            <img src="assets/boyu-yan-AyqATnC-stc-unsplash.jpg" class="mainImage" alt="image">
+        </div>
         <div class="signInDiv">
             <div class="sectionOne">
                 This is not a real online service! You know you need something
                 <br>like this in your life to help you realize your deepest dreams.
-                <br>Sign up now to get started.
+                <br>Sign up <em>now</em> to get started.
                 <br>
                 <br>You know you want to.
             </div>
             <div class="form">
                 <form action="./assets/poppins.txt" method="post">
-                    <fieldset>
-                        <legend>Let's do this</legend>
-                        <div>
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name">
-                        </div>
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name">
-                        <label for="email_id">EMAIL</label>
-                        <input type="email" id="email_id">
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="text" id="phone_number" minlength="10" pattern="[0-9]{10}">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" name="" id="confirm_password">
-                    </fieldset>
+                    <div class="fieldsetBox">
+                        <fieldset>
+                            <legend><h3>Let's do this!</h1></legend>
+                            <div class="leftSide">
+                                <div>
+                                    <label for="first_name">FIRST NAME</label>
+                                    <div>
+                                        <input type="text" id="first_name">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email_id">EMAIL</label>
+                                    <div>
+                                        <input type="email" id="email_id">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="password">PASSWORD</label>
+                                    <div>
+                                        <input type="password" id="password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rightSide">
+                                <div>
+                                    <label for="last_name">LAST NAME</label>
+                                    <div>
+                                        <input type="text" id="last_name">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phone_number">PHONE NUMBER</label>
+                                    <div>
+                                        <input type="text" id="phone_number" minlength="10" pattern="[0-9]{10}">
+                                    </div>    
+                                </div>
+                                <div>
+                                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                                    <div>
+                                        <input type="password" id="confirm_password" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
-            <button type="submit">Create Account</button>
-            <div class="alreayHave">Already have an account? Log in</div>
+            <div class="alreayHave">Already have an account? <a href="https://google.com" target="_blank">Log in</a></div>
         </div>
     </div>
 </body>
