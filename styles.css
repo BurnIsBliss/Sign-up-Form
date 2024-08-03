@@ -126,7 +126,7 @@ input:focus {
     background-color: black;
     display: flex;
     position: absolute;
-    top: 7.9%;
+    top: 10.3%;
     width: 28.65%;
     justify-content: center;
     align-items: center;
@@ -138,6 +138,16 @@ input:focus {
 }
 
 .odinLogo {
-    height: 150px;
+    height: 130px;
     width: auto;
+}
+
+.credits {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    color: red;
+    justify-content: center;
+    left: 5%;
+    font-weight: 400;
 }

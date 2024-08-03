@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="containerSplitTwo">
@@ -14,6 +15,7 @@
                 <div class="odinText">ODIN</div>
             </div>
             <img src="assets/boyu-yan-AyqATnC-stc-unsplash.jpg" class="mainImage" alt="image">
+            <div class="credits">Image downloaded from <a href="unsplash.com">unsplash.com</a></div>
         </div>
         <div class="signInDiv">
             <div class="sectionOne">
@@ -32,13 +34,13 @@
                                 <div>
                                     <label for="first_name">FIRST NAME</label>
                                     <div>
-                                        <input type="text" id="first_name">
+                                        <input type="text" id="first_name" required>
                                     </div>
                                 </div>
                                 <div>
                                     <label for="email_id">EMAIL</label>
                                     <div>
-                                        <input type="email" id="email_id">
+                                        <input type="email" id="email_id" required>
                                     </div>
                                 </div>
                                 <div>
@@ -52,13 +54,13 @@
                                 <div>
                                     <label for="last_name">LAST NAME</label>
                                     <div>
-                                        <input type="text" id="last_name">
+                                        <input type="text" id="last_name" required>
                                     </div>
                                 </div>
                                 <div>
                                     <label for="phone_number">PHONE NUMBER</label>
                                     <div>
-                                        <input type="text" id="phone_number" minlength="10" pattern="[0-9]{10}">
+                                        <input type="text" id="phone_number" minlength="10" pattern="([0-9]{10})" required>
                                     </div>    
                                 </div>
                                 <div>
